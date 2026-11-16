@@ -1,0 +1,643 @@
+
+/* =================================
+   1. GENERAL APPLICATION STYLING
+================================= */
+
+.stApp {
+    background: linear-gradient(
+        135deg,
+        #f5f7ff,
+        #eef2ff,
+        #f8faff
+    );
+    font-family: "Segoe UI", sans-serif;
+}
+
+
+/* =================================
+   2. MAIN CONTENT AREA
+================================= */
+
+.block-container {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    max-width: 1500px;
+}
+
+
+/* =================================
+   3. MAIN HEADING
+================================= */
+
+h1 {
+    color: #263b80;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+h2, h3 {
+    color: #344b91;
+    font-weight: 700;
+}
+
+
+/* =================================
+   4. PARAGRAPH TEXT
+================================= */
+
+p, label {
+    color: #374151;
+}
+
+
+
+/* =================================
+   BRIGHT GENERATE BUTTON
+================================= */
+
+.stButton > button {
+    background: linear-gradient(
+        90deg,
+        #2962ff,
+        #a020f0
+    ) !important;
+
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 12px !important;
+
+    font-size: 16px !important;
+    font-weight: 700 !important;
+
+    padding: 12px 20px !important;
+
+    box-shadow: 0 5px 15px rgba(80, 60, 220, 0.30);
+
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+
+.stButton > button:hover {
+    background: linear-gradient(
+        90deg,
+        #1748e8,
+        #8500d4
+    ) !important;
+
+    color: #ffffff !important;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(80, 60, 220, 0.40);
+}
+
+/* Button text */
+
+.stButton > button p {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+}
+
+
+
+/* =================================
+   6. INPUT BOXES
+================================= */
+
+.stTextInput input,
+.stTextArea textarea {
+    border-radius: 10px;
+    border: 1px solid #d6dcf5;
+    background-color: #ffffff;
+}
+
+
+/* =================================
+   7. DROPDOWN
+================================= */
+
+.stSelectbox div[data-baseweb="select"] {
+    border-radius: 10px;
+}
+
+
+/* =================================
+   8. DIVIDER
+================================= */
+
+hr {
+    border-color: #dce2f5;
+}
+
+
+/* =================================
+   9. SAVED DRAFT EXPANDERS
+================================= */
+
+.streamlit-expanderHeader {
+    background-color: #ffffff;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+
+/* =================================
+   10. SUCCESS MESSAGE
+================================= */
+
+.stAlert {
+    border-radius: 10px;
+}
+/* Dashboard Hero Banner */
+
+.hero-banner {
+    background: linear-gradient(120deg, #536dfe, #7655e8);
+    padding: 30px;
+    border-radius: 18px;
+    margin-bottom: 25px;
+    margin-top:30px;
+    box-shadow: 0 8px 22px rgba(83, 109, 254, 0.18);
+}
+
+.hero-banner h1 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.hero-banner p {
+    color: #f0f1ff;
+    font-size: 16px;
+}
+
+/* =================================
+   DASHBOARD STATISTICS CARDS
+================================= */
+
+div[data-testid="stMetric"] {
+    background: #ffffff;
+    padding: 22px;
+    border-radius: 16px;
+    border: 1px solid #e1e7ff;
+    box-shadow: 0 5px 15px rgba(60, 75, 150, 0.08);
+    transition: all 0.3s ease;
+}
+
+div[data-testid="stMetric"]:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 9px 22px rgba(60, 75, 150, 0.15);
+}
+
+div[data-testid="stMetricLabel"] {
+    color: #5364a5;
+    font-weight: 600;
+}
+
+div[data-testid="stMetricValue"] {
+    color: #3549a0;
+    font-weight: 800;
+}
+
+/* =================================
+   INPUT TEXT VISIBILITY
+================================= */
+
+/* Text inside input fields */
+.stTextInput input {
+    color: #172554 !important;
+    background-color: #ffffff !important;
+    caret-color: #4f46e5 !important;
+    font-size: 15px !important;
+}
+
+/* Text inside large text areas */
+.stTextArea textarea {
+    color: #172554 !important;
+    background-color: #ffffff !important;
+    caret-color: #4f46e5 !important;
+    font-size: 15px !important;
+}
+
+/* Placeholder text */
+.stTextInput input::placeholder,
+.stTextArea textarea::placeholder {
+    color: #8490a8 !important;
+    opacity: 1;
+}
+
+/* Text selection */
+.stTextInput input::selection,
+.stTextArea textarea::selection {
+    background-color: #c7d2fe;
+    color: #172554;
+}
+
+/* Input focus border */
+.stTextInput input:focus,
+.stTextArea textarea:focus {
+    border: 2px solid #536dfe !important;
+    box-shadow: 0 0 0 2px rgba(83, 109, 254, 0.12) !important;
+}
+
+/* Dropdown text */
+.stSelectbox div[data-baseweb="select"] * {
+    color: #172554 !important;
+}
+
+
+
+/* =================================================
+   AI EMAIL ASSISTANT - COMPLETE DROPDOWN DESIGN
+================================================= */
+
+
+/* 1. MAIN DROPDOWN CONTAINER */
+
+div[data-testid="stSelectbox"] {
+    margin-bottom: 15px;
+}
+
+
+/* 2. MAIN SELECT BOX */
+
+div[data-testid="stSelectbox"] div[data-baseweb="select"] > div {
+    background-color: #ffffff !important;
+
+    border: 2px solid #7655f5 !important;
+
+    border-radius: 12px !important;
+
+    min-height: 48px !important;
+
+    box-shadow: 0 3px 10px rgba(118, 85, 245, 0.12) !important;
+
+    transition: all 0.25s ease !important;
+}
+
+
+/* 3. MAIN DROPDOWN HOVER */
+
+div[data-testid="stSelectbox"] div[data-baseweb="select"] > div:hover {
+    border-color: #4f46e5 !important;
+
+    box-shadow: 0 4px 14px rgba(79, 70, 229, 0.20) !important;
+}
+
+
+/* 4. SELECTED TEXT */
+
+div[data-testid="stSelectbox"] div[data-baseweb="select"] input {
+    color: #172554 !important;
+
+    font-size: 16px !important;
+
+    font-weight: 600 !important;
+}
+
+
+/* 5. SELECTED VALUE AND TEXT */
+
+div[data-testid="stSelectbox"] div[data-baseweb="select"] div {
+    color: #172554 !important;
+}
+
+
+/* 6. DROPDOWN ARROW */
+
+div[data-testid="stSelectbox"] div[data-baseweb="select"] svg {
+    color: #713cf5 !important;
+
+    fill: #713cf5 !important;
+}
+
+
+
+
+
+
+/* ==========================================
+   COLORFUL AI EMAIL ASSISTANT DROPDOWN
+========================================== */
+
+/* Main dropdown */
+div[data-testid="stSelectbox"] [data-baseweb="select"] > div {
+    background: linear-gradient(120deg, #ffffff, #f3f0ff) !important;
+    border: 2px solid #8b5cf6 !important;
+    border-radius: 12px !important;
+    min-height: 48px !important;
+    box-shadow: 0 4px 14px rgba(139, 92, 246, 0.20) !important;
+}
+
+/* Selected text */
+div[data-testid="stSelectbox"] [data-baseweb="select"] span {
+    color: #5b21b6 !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+}
+
+/* Dropdown arrow */
+div[data-testid="stSelectbox"] [data-baseweb="select"] svg {
+    color: #9333ea !important;
+    fill: #9333ea !important;
+}
+
+/* Popup menu */
+div[data-baseweb="popover"] {
+    background: #ffffff !important;
+    border: 2px solid #c4b5fd !important;
+    border-radius: 14px !important;
+    box-shadow: 0 10px 28px rgba(91, 33, 182, 0.22) !important;
+    opacity: 1 !important;
+}
+
+/* Menu background */
+div[data-baseweb="popover"] ul,
+div[data-baseweb="popover"] [role="listbox"] {
+    background: #ffffff !important;
+    padding: 8px !important;
+}
+
+/* All options */
+div[data-baseweb="popover"] [role="option"] {
+    background: #ffffff !important;
+    color: #312e81 !important;
+    font-size: 16px !important;
+    font-weight: 650 !important;
+    padding: 14px 16px !important;
+    margin: 4px 0 !important;
+    border-radius: 9px !important;
+    opacity: 1 !important;
+    transition: all 0.2s ease !important;
+}
+
+/* First option - Blue */
+div[data-baseweb="popover"] [role="option"]:nth-child(1) {
+    border-left: 5px solid #3b82f6 !important;
+}
+
+/* Second option - Purple */
+div[data-baseweb="popover"] [role="option"]:nth-child(2) {
+    border-left: 5px solid #a855f7 !important;
+}
+
+/* Third option - Pink */
+div[data-baseweb="popover"] [role="option"]:nth-child(3) {
+    border-left: 5px solid #ec4899 !important;
+}
+
+/* Hover effect */
+div[data-baseweb="popover"] [role="option"]:hover {
+    background: linear-gradient(
+        90deg,
+        #e0e7ff,
+        #f3e8ff
+    ) !important;
+    color: #6d28d9 !important;
+    transform: translateX(3px);
+}
+
+/* Selected option */
+div[data-baseweb="popover"] [role="option"][aria-selected="true"] {
+    background: linear-gradient(
+        90deg,
+        #dbeafe,
+        #ede9fe
+    ) !important;
+    color: #5b21b6 !important;
+    font-weight: 800 !important;
+}
+
+/* =================================
+   COLORFUL ACTION SELECTOR
+================================= */
+
+div[data-testid="stRadio"] div[role="radiogroup"] {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+div[data-testid="stRadio"] div[role="radiogroup"] label {
+    background: white !important;
+    border: 2px solid #d8ccff !important;
+    border-radius: 12px !important;
+    padding: 14px 20px !important;
+    transition: all 0.25s ease !important;
+    box-shadow: 0 3px 10px rgba(100, 70, 200, 0.10);
+}
+
+div[data-testid="stRadio"] div[role="radiogroup"] label:hover {
+    background: #ede9fe !important;
+    border-color: #8b5cf6 !important;
+    transform: translateY(-3px);
+}
+
+div[data-testid="stRadio"] div[role="radiogroup"] label:has(input:checked) {
+    background: linear-gradient(
+        120deg,
+        #3b82f6,
+        #9333ea
+    ) !important;
+    border-color: #7c3aed !important;
+    color: white !important;
+    box-shadow: 0 5px 15px rgba(124, 58, 237, 0.3);
+}
+
+div[data-testid="stRadio"] div[role="radiogroup"] label:has(input:checked) p {
+    color: white !important;
+    font-weight: 700 !important;
+}
+
+/* =====================================
+   SAVED DRAFT HISTORY - MODERN DESIGN
+===================================== */
+
+div[data-testid="stExpander"] {
+    background: #ffffff !important;
+    border: 1px solid #d8ccff !important;
+    border-radius: 14px !important;
+    margin-bottom: 14px !important;
+    box-shadow: 0 3px 12px rgba(80, 50, 150, 0.08);
+    overflow: hidden;
+}
+
+/* Dropdown heading */
+div[data-testid="stExpander"] summary {
+    background: #f1edff !important;
+    padding: 17px !important;
+    border-radius: 12px !important;
+}
+
+/* Dropdown heading text */
+div[data-testid="stExpander"] summary p {
+    color: #4c1d95 !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+}
+
+/* Dropdown hover */
+div[data-testid="stExpander"] summary:hover {
+    background: #e5dcff !important;
+}
+
+/* Expanded content */
+div[data-testid="stExpander"] details[open] {
+    background: #ffffff !important;
+}
+
+/* Text inside draft */
+div[data-testid="stExpander"] div[data-testid="stMarkdownContainer"] p {
+    color: #26324b;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* Draft metadata */
+.draft-meta {
+    background: #f3f0ff;
+    color: #5b21b6;
+    padding: 12px;
+    border-radius: 9px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+/* Draft preview */
+.draft-preview {
+    background: #f8f9ff;
+    border-left: 4px solid #8b5cf6;
+    padding: 14px;
+    border-radius: 8px;
+    color: #334155;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+
+
+
+/* ================================================
+   RECENT EMAIL CARDS - SOLID, HIGH-CONTRAST DESIGN
+   Targets Streamlit containers created with
+   st.container(border=True)
+================================================ */
+
+div[data-testid="stVerticalBlockBorderWrapper"] {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    border: 1px solid #cbd5e1 !important;
+    border-radius: 14px !important;
+    box-shadow: 0 4px 14px rgba(31, 41, 55, 0.09) !important;
+    padding: 14px !important;
+    opacity: 1 !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+div[data-testid="stVerticalBlockBorderWrapper"] > div {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+div[data-testid="stVerticalBlockBorderWrapper"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(31, 41, 55, 0.14) !important;
+    border-color: #8b9bea !important;
+}
+
+/* Card headings and email preview text */
+div[data-testid="stVerticalBlockBorderWrapper"] [data-testid="stMarkdownContainer"] p {
+    color: #1e293b !important;
+    font-size: 14px !important;
+    line-height: 1.65 !important;
+    opacity: 1 !important;
+}
+
+/* Draft metadata captions */
+div[data-testid="stVerticalBlockBorderWrapper"] [data-testid="stCaptionContainer"],
+div[data-testid="stVerticalBlockBorderWrapper"] [data-testid="stCaptionContainer"] p {
+    color: #64748b !important;
+    font-size: 12px !important;
+    opacity: 1 !important;
+}
+
+
+/* ================================================
+   RECENT EMAIL HISTORY CARDS - EXPLICIT CARD STYLE
+================================================ */
+.recent-email-card {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100%;
+    padding: 16px 15px;
+    margin: 0 0 12px 0;
+    background: #ffffff !important;
+    border: 1px solid #d7deef !important;
+    border-radius: 13px;
+    box-shadow: 0 4px 14px rgba(38, 59, 128, 0.10);
+    color: #172554 !important;
+    opacity: 1 !important;
+    transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+.recent-email-card:hover {
+    transform: translateY(-3px);
+    border-color: #8b9bea !important;
+    box-shadow: 0 9px 22px rgba(38, 59, 128, 0.16);
+}
+.recent-email-subject {
+    margin-bottom: 10px;
+    color: #172554 !important;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+}
+.recent-email-meta {
+    margin-bottom: 10px;
+    color: #64748b !important;
+    font-size: 11px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+.recent-email-category {
+    display: inline-block;
+    margin: 0 0 9px 0;
+    padding: 4px 8px;
+    border-radius: 7px;
+    background: #eef2ff !important;
+    color: #4338a8 !important;
+    font-size: 11px;
+    font-weight: 600;
+}
+.recent-email-preview {
+    color: #334155 !important;
+    font-size: 13px;
+    line-height: 1.65;
+    overflow-wrap: anywhere;
+}
+/* Main Hero Banner */
+.hero-banner {
+    background: linear-gradient(135deg, #4c1d95, #7c3aed, #a855f7);
+    padding: 35px 30px;
+    border-radius: 18px;
+    text-align: center;
+    margin: 15px 0 25px 0;
+    box-shadow: 0 6px 20px rgba(76, 29, 149, 0.25);
+}
+
+.hero-banner h1 {
+    color: white;
+    font-size: 34px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.hero-banner p {
+    color: #f3e8ff;
+    font-size: 17px;
+    margin-bottom: 0;
+}
